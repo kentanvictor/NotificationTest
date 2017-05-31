@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">NotificationTest</string>
     <string name="but1">Send motice</string>
+    <string name="tex1">This is notification layout</string>
 </resources>
