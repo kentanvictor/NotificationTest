@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 Notification notification = new NotificationCompat.Builder(this)
                         .setContentTitle("This is content title")
-                        .setContentText("This is content text")
+                        .setStyle(new NotificationCompat.BigTextStyle().bigText("Learn how to build notifications, send and sync data, " +
+                                "and use Voice actions.Get the offical Android IDE and developer tools to build " +
+                                "apps for Android."))
                         .setWhen(System.currentTimeMillis())
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setContentIntent(pi)

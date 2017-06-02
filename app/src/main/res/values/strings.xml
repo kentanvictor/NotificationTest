@@ -2,4 +2,5 @@
     <string name="app_name">NotificationTest</string>
     <string name="but1">Send motice</string>
     <string name="tex1">This is notification layout</string>
+    <string name="tex2">Learn how to build notifications, send and sync data, and use Voice actions.Get the offical Android IDE and developer tools to build apps for Android.</string>
 </resources>

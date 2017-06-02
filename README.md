@@ -16,3 +16,10 @@
  ```xml
  <uses-permission android:name"android.permission.VIBRATE"/>
  ```
+<br/>
+ * setLights()
+ >控制手机LED灯的显示<br/>当手机有未接电话或者有未读短信的时候手机前置的LED灯就会闪烁<br/>提醒用户去查看<br/>setLights()接收的第一个参数指定LED颜色<br/>第二个参数用于指定LED灯亮起的时长<br/>以毫秒为单位<br/>第三个参数指定的是LED灯暗去的时长<br/>同样也是以毫秒为单位<br/>
+ ><h4>下面的代码就是实现LED灯以绿色的光一闪一闪的效果</h4><br/>
+ ```java
+ setLights(Color.GREEN,1000,1000)
+ ```
