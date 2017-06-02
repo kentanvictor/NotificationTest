@@ -23,3 +23,18 @@
  ```java
  setLights(Color.GREEN,1000,1000)
  ```
+ <br/>
+ * setDefaults()
+ >如果不想要那么多繁杂的设置，直接就可以使用默认的效果<br/>
+ ```java
+ setDefaults(NotificationCompat.DEFAULT_ALL)
+ ```
+ <br/>
+ * setStyle()
+ >在setStyle方法中创建了一个NotificationCompat.BigTextStyle对象，这个对象就是用于封装长文字信息的<br/>当然，还可以添加图片<br/>在setStyle方法中创建一个NotificationCompat.BigPictureStyle对象<br/>然后调用bigPicture()方法将图片传入<br/>通过BitmapFactory的decodeResource()方法将图片解析成Bitmap对象再传入到bigPicture()方法中<br/>
+ ```java
+ setStyle(new NotificationCompat.BigTextStyle().bigText("Learn how to build notifications, send and sync data, and use voice actions. Get the official Android IDE and developer tools to build apps for Android."))
+ ```
+ <br/>
+ * setPriority()
+ >用于设置通知的重要程度</br>5个常量可以选择<br/>PRIORITY_DEFAULT：表示默认的重要程度。<em>和不设置效果是一样的</em></br>PRIORITY_MIN表示最低的重要程度。<em>系统可能只会在特定的场景才显示这条通知，比如用户下拉状态栏的时候</em></br>
