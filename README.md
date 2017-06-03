@@ -37,4 +37,7 @@
  ```
  <br/>
  * setPriority()
- >用于设置通知的重要程度</br>5个常量可以选择<br/>PRIORITY_DEFAULT：表示默认的重要程度。<em>和不设置效果是一样的</em></br>PRIORITY_MIN表示最低的重要程度。<em>系统可能只会在特定的场景才显示这条通知，比如用户下拉状态栏的时候</em></br>
+ >用于设置通知的重要程度</br>5个常量可以选择<br/>PRIORITY_DEFAULT：表示默认的重要程度。<em><strong>和不设置效果是一样的</strong></em></br>PRIORITY_MIN表示最低的重要程度。<em><strong>统可能只会在特定的场景才显示这条通知，比如用户下拉状态栏的时候</strong></em></br>PRIORITY_LOW表示较低的重要程度。<em><strong>系统可能会将这类通知缩小，或改变其显示的顺序，将其排在更重要的通知之后</strong></em><br/>PRIORITY_HIGH表示较高的重要程度。<em><strong>系统可能会将这类通知放大，或改变其显示顺序，将其排在比较靠前的位置</strong></em><br/>PRIORITY_MAX表示最高的重要程度。<em><strong>这类通知消息必须要让用户立刻看到，甚至需要用户做出相应操作。</strong></em></br>
+ ```java
+ setPriority(NotificationCompat.PRIORITY_MAX)
+ ```
